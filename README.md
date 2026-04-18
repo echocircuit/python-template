@@ -6,13 +6,13 @@ Short description of what this project does.
 
 ```bash
 # Clone the repo
-git clone git@github.com:echocircuit/YOUR_REPO.git
+git clone git@github.com:YOUR_USERNAME/YOUR_REPO.git
 cd YOUR_REPO
 
-# Create virtual environment and install
-python -m venv .venv
-source .venv/bin/activate
-pip install -e ".[dev]"
+# Create virtual environment and install (requires uv: brew install uv)
+uv venv
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
+uv pip install -e ".[dev]"
 
 # Install pre-commit hooks
 pre-commit install

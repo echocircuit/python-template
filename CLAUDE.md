@@ -6,7 +6,7 @@ TODO: One-paragraph description of what this project does and why.
 ## Architecture
 - Source code lives in `src/myproject/`
 - Uses `pyproject.toml` for all configuration (no setup.py, no separate tool configs)
-- Installed in editable mode: `pip install -e ".[dev]"`
+- Installed in editable mode: `uv pip install -e ".[dev]"`
 
 ## Commands
 - Run unit tests: `pytest tests/unit/`

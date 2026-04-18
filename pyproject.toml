@@ -10,7 +10,7 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.11"
 authors = [
-    { name = "echocircuit", email = "8434258+echocircuit@users.noreply.github.com" },
+    { name = "YOUR_NAME_HERE", email = "YOUR_EMAIL_HERE" },
 ]
 dependencies = [
     # Add runtime dependencies here
