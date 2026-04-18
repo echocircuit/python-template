@@ -10,7 +10,7 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.11"
 authors = [
-    { name = "YOUR_NAME_HERE", email = "YOUR_EMAIL_HERE" },
+    { name = "YOUR_NAME_HERE" },
 ]
 dependencies = [
     # Add runtime dependencies here
