@@ -43,11 +43,13 @@ mypy src/
 
 ## Phase 3: Open in VS Code and let Claude Code initialize the project
 
+Open the project folder in VS Code (File → Open Folder), or from the terminal if you've installed the shell command (`Cmd+Shift+P` → "Shell Command: Install 'code' command in PATH"):
+
 ```bash
 code .
 ```
 
-In the VS Code terminal, start Claude Code and give it this prompt (fill in the bracketed parts):
+In the Claude Code panel, run `/init` to let it learn the project structure. Then give it this prompt (fill in the bracketed parts):
 
 > Read CLAUDE.md and CONTRIBUTING.md to understand the project conventions. This project is **[one sentence description of what it does]**. The package should be named **[your_package_name]**. Please:
 > 1. Rename `myproject` to `[your_package_name]` in all files, directories, and configs
@@ -101,7 +103,17 @@ Branch protection requires picking which checks must pass — but the dropdown i
 
 ```bash
 git checkout -b chore/trigger-ci
-echo "" >> README.md  # trivial change
+```
+
+Make a small real edit — e.g. add an HTML comment to `README.md`:
+
+```markdown
+<!-- initial CI trigger -->
+```
+
+Then commit and push:
+
+```bash
 git add README.md
 git commit -m "chore: trigger initial CI run"
 git push -u origin chore/trigger-ci
